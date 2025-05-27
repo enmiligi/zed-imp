@@ -4,6 +4,9 @@
     "let" @start
     name: (_) @indent)
 (letStatement
+    ":" @start
+    type: (_) @indent)
+(letStatement
     "=" @start
     value: (_) @indent)
 (letExpr
@@ -12,6 +15,9 @@
 (letExpr
     "=" @start
     value: (_) @indent)
+(letExpr
+    ":" @start
+    type: (_) @indent)
 (letExpr
     "in" @start
     result: (_) @indent)
@@ -24,4 +30,10 @@
 (if
     "else" @start
     else: (_) @indent)
+(case
+    "case" @start
+    value: (_) @indent)
+(case
+    (caseBody "=>" @start) @indent)
+(case "of" @start) @indent
 ("(" @start (_) @indent ")" @end)

@@ -5,6 +5,8 @@
   "if"
   "then"
   "else"
+  "case"
+  "of"
 ] @keyword
 [
   "="
@@ -17,6 +19,7 @@
   "!"
   "=="
   "!="
+  "=>"
 ] @operator
 [
   "("
@@ -27,6 +30,7 @@
 [
   ";"
   "."
+  "|"
 ] @punctuation.delimiter
 (boolLiteral) @boolean
 [
@@ -49,3 +53,15 @@
   value: (lambda))
 
 (call (identifier) @function (_))
+
+(letExpr
+    type: (_) @type)
+(letStatement
+    type: (_) @type)
+
+(lambda
+    type: (_) @type)
+
+(caseBody
+    constructor: (identifier) @function
+    captures: (_))
