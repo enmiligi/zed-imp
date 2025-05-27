@@ -1,0 +1,11 @@
+id = "imp"
+name = "Imp"
+version = "0.0.1"
+schema_version = 1
+authors = ["Enea Giger <enea.giger@tuta.io>"]
+description = "Language support for the language Imp made for my matura project."
+repository = "https://github.com/enmiligi/zed-imp"
+
+[grammars.imp]
+repository = "file:///home/eneagiger/Dokumente/tree-sitter-imp/"
+rev = "7735ae5ae57a6d322c6bdeaa066def59ef04d427"
