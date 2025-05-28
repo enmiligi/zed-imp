@@ -7,6 +7,7 @@
   "else"
   "case"
   "of"
+  "type"
 ] @keyword
 [
   "="
@@ -65,3 +66,13 @@
 (caseBody
     constructor: (identifier) @function
     captures: (_))
+
+(typeStatement
+    (typeName) @type)
+
+(typeStatement
+    (typeVar) @type)
+
+(constructor
+    (identifier) @function
+    (_) @type)
