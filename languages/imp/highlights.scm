@@ -23,6 +23,7 @@
   "=>"
   "or"
   "and"
+  "^"
 ] @operator
 [
   "("
@@ -44,7 +45,7 @@
   (charLiteral)
   (stringLiteral)
 ] @string
-(escapeSequence) @string.escape
+(escapechar) @string.escape
 (identifier) @variable
 
 (letExpr
