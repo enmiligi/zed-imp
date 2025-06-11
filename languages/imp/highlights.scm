@@ -78,3 +78,5 @@
 (constructor
     (identifier) @function
     (_) @type)
+
+(comment) @comment
