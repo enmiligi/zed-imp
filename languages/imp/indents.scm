@@ -1,5 +1,6 @@
 (list "]" @end) @indent
 (lambda
+    "." @start
     body: (_) @indent)
 (letStatement
     "let" @start
