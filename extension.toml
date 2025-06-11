@@ -8,4 +8,4 @@ repository = "https://github.com/enmiligi/zed-imp"
 
 [grammars.imp]
 repository = "https://github.com/enmiligi/tree-sitter-imp"
-rev = "8c6175c31c92ddb65fb5e1577ced2694fde85380"
+rev = "15b6c7f3419c2950215951c989f663eb07f94e8d"

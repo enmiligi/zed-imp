@@ -1,5 +1,6 @@
 (list "]" @end) @indent
-(lambda) @indent
+(lambda
+    body: (_) @indent)
 (letStatement
     "let" @start
     name: (_) @indent)
@@ -35,5 +36,7 @@
     value: (_) @indent)
 (case
     (caseBody "=>" @start) @indent)
+(call (_) (_) @indent)
 (case "of" @start) @indent
 ("(" @start (_) @indent ")" @end)
+("[" @start (_) @indent "]" @end)
